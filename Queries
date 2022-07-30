@@ -1,0 +1,40 @@
+# USE JOIN TO FIND DATA TO ASSIGN DOG A VET #
+
+SELECT BOARDING.OID, OWNER.DOGID
+FROM BOARDING 
+FULL OUTER JOIN OWNER ON BOARDING.OID=OWNER.OID
+ORDER BY BOARDING.OID;
+
+# QUERY CREATED TO FIND DATE OF PAYMENTS #
+
+SELECT PAYMENT.PAYID, PAYMENT.OID, BOARDING.LAST_STAY
+FROM BOARDING
+LEFT JOIN PAYMENT
+ON BOARDING.OID = PAYMENT.OID
+ORDER BY BOARDING.OID;
+
+# QUERY USED TO FIND HIRE DATE OF VETS TO DETERMINE A ROOM CREATION DATE #
+
+SELECT ROOM.RMID, ROOM.VETID, VET.HIREDATE
+FROM ROOM
+INNER JOIN VET ON ROOM.VETID=VET.VETID;
+
+
+#QUERY TO GET OBTAIN LAST STAY OF DOG FROM BOARDING AND OWNER TABLE#
+
+SELECT OWNER.OID, OWNER.DOGID, BOARDING.LAST_STAY
+FROM OWNER
+LEFT JOIN BOARDING
+ON OWNER.OID = BOARDING.OID
+ORDER BY OWNER.OID;
+
+
+# Write a query that gives the latest employee information.
+
+#Write a query that gives upcoming reservations
+
+#Write a query that gives the count of reservations each month. 
+
+#Write a query that returns how many returning customers you have as of today. Expand that query to return the number of returning customers as of any date so I can plot the value over time to track how business is doing.
+
+#Write a query that shows how much money was earned each month. Expand the query to show how much money was earned for the year as of now.
