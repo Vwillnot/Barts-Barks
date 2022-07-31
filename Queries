@@ -1,3 +1,4 @@
+ 
 # USE JOIN TO FIND DATA TO ASSIGN DOG A VET #
 
 SELECT BOARDING.OID, OWNER.DOGID
@@ -29,7 +30,10 @@ ON OWNER.OID = BOARDING.OID
 ORDER BY OWNER.OID;
 
 
-# Write a query that gives the latest employee information.
+# WRITE A QUERY THAT GIVE THE LATEST VET INFORMATON.
+
+SELECT VETID, NAME, PHONENUM, HIREDATE, RMID
+FROM VET;
 
 #Write a query that gives upcoming reservations
 
