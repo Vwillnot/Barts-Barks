@@ -1,0 +1,3 @@
+<img src = "/Users/v.will77/Documents/Dog Boarding Lucid chart.jpeg">
+
+An Entity Relationship (ER) Diagram that illustrates how entities relate to each other within a system. 
