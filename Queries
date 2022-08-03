@@ -42,8 +42,36 @@ FROM OWNER
 INNER JOIN BOARDING
 ON OWNER.OID = BOARDING.OID;
 
-#Write a query that gives the count of reservations each month. 
+#WRITE A QUERY THAT GIVES THE SUM of ALL RESERVATIONS. 
 
-#Write a query that returns how many returning customers you have as of today. Expand that query to return the number of returning customers as of any date so I can plot the value over time to track how business is doing.
+SELECT SUM (TOTAL)
+FROM PAYMENT
 
-#Write a query that shows how much money was earned each month. Expand the query to show how much money was earned for the year as of now.
+#WRITE A QUERY THAT SHOWS THE NUMBER OF RESERVATIONS 
+
+SELECT COUNT (TOTAL)
+FROM PAYMENT
+
+#WRITE A QUERY THAT ORDERS OWNER NAME IN ALPHABETICAL ORDER.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
